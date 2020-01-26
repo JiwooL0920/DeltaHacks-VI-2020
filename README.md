@@ -1,7 +1,7 @@
 # DeltaHackVI-2020
 
 ## Overview: 
-**App Name:** Sharp Management 
+**App Name:** Sharp Management   
 **Last Update:** Jan 26, 2020
 
 ## Team Members: 
@@ -21,7 +21,7 @@ This application is an Android App developed with Java in Android Studio for fro
 ## Features:
 1. **User Authentication** — Upon launching, users need to either Login or Sign Up their accounts, which are done by Firebase authentication system. Once authenticated, the user is brought to the Main Menu, where they can select the following features. This feature was implemented for security and privacy.
 
-2. **Find Nearest Needle Disposal Facilities** — First, retrieve the user’s location in latitude and longitude using the built in Location and LocationManager libraries. On top of that, we made our own database that contained information about the needle disposing facilities: [Name, Address, Postal Code, Phone Number, Email Address, Latitude, Longitude]. Then, we wrote our custom csv reader to read through the file and retrieve latitude and longitude. The algorithm for shortest distance given two geographic coordinates are computed according to https://www.movable-type.co.uk/scripts/latlong.html. Then, we retrieve the data for the facility that was nearest to you, and print out its information on the screen in the form of TextView.
+2. **Find Nearest Needle Disposal Facilities** — First, retrieve the user’s location in latitude and longitude using the built in Location and LocationManager libraries. On top of that, we made our own database that contained data provided by the city/institutions about the needle disposing facilities: [Name, Address, Postal Code, Phone Number, Email Address, Latitude, Longitude]. Then, we wrote our custom csv reader to read through the file and retrieve latitude and longitude. The algorithm for shortest distance given two geographic coordinates are computed according to https://www.movable-type.co.uk/scripts/latlong.html. Then, we retrieve the data for the facility that was nearest to you, and print out its information on the screen in the form of TextView.
 
 3. **Report Needles That Are Not Properly Disposed Of** — There are two modes in this function — you can either choose to upload a photo of the non-properly disposed needles, or choose to take a photo within the app. The image is then saved to an ImageView on the screen, and this data gets transfer to the Firebase storage system, which is then meant to be transferred to the related organizations.
 
