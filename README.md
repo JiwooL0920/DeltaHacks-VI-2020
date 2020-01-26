@@ -1,4 +1,4 @@
-# DeltaHackVI-2020
+# Sharp Management (DeltaHacks-VI-2020)
 
 ## Overview: 
 **App Name:** Sharp Management   
